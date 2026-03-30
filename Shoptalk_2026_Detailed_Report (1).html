@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shoptalk Las Vegas 2026 — Detailed Report</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--bg:#f7f5f2;--surface:#ffffff;--ink:#1c1917;--muted:#78716c;--border:#e7e5e4;--accent:#7c3aed;--accent-light:#ede9fe;--blue:#2563eb;--blue-light:#dbeafe}
+  body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+  .header{background:var(--surface);border-bottom:1px solid var(--border);padding:40px 48px}
+  .header-inner{max-width:1200px;margin:0 auto}
+  .header-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px}
+  .header h1{font-family:'Fraunces',serif;font-size:36px;font-weight:700;line-height:1.2}
+  .header-meta{font-size:13px;color:var(--muted);margin-top:8px}
+  .header-badges{display:flex;gap:10px;flex-wrap:wrap;align-self:center}
+  .badge{font-size:12px;font-weight:600;padding:6px 14px;border-radius:8px;display:inline-flex;align-items:center;gap:6px}
+  .badge-purple{background:var(--accent-light);color:var(--accent)}
+  .badge-green{background:#ecfdf5;color:#059669}
+  .badge-amber{background:#fffbeb;color:#d97706}
+  .main{max-width:1200px;margin:0 auto;padding:40px 48px}
+  .toc{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:32px;margin-bottom:40px}
+  .toc h2{font-family:'Fraunces',serif;font-size:20px;margin-bottom:16px}
+  .toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+  .toc-item{font-size:14px;color:var(--blue);padding:6px 0;border-bottom:1px dashed transparent;transition:border-color 0.2s}
+  .toc-item:hover{border-bottom-color:var(--blue)}
+  .toc-item span{color:var(--muted);margin-right:6px;font-weight:600;font-size:12px}
+  .meeting{background:var(--surface);border:1px solid var(--border);border-radius:14px;margin-bottom:16px;overflow:hidden;transition:box-shadow 0.2s}
+  .meeting:hover{box-shadow:0 4px 20px rgba(0,0,0,0.04)}
+  .meeting-header{padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .meeting-left{display:flex;align-items:center;gap:16px;flex:1;min-width:0}
+  .meeting-num{font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--accent);min-width:36px}
+  .meeting-info{flex:1;min-width:0}
+  .meeting-company{font-weight:700;font-size:16px}
+  .meeting-contact{font-size:13px;color:var(--muted);margin-top:2px}
+  .meeting-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
+  .category-tag{font-size:11px;font-weight:500;padding:4px 10px;border-radius:6px;background:var(--accent-light);color:var(--accent);white-space:nowrap}
+  .meeting-body{padding:0 28px 24px;padding-left:80px;border-top:1px solid var(--border)}
+  .meeting-body .section{margin-top:18px}
+  .meeting-body .section-label{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .meeting-body .section-content{font-size:14px;line-height:1.7;color:#44403c}
+  .meeting-body .action-item{font-size:13px;padding:8px 14px;background:#faf5ff;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;margin-top:6px;color:var(--ink)}
+  .summary-section{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:36px;margin-top:40px}
+  .summary-section h2{font-family:'Fraunces',serif;font-size:24px;margin-bottom:24px}
+  .summary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
+  .summary-card{padding:24px;border-radius:12px;border:1px solid var(--border)}
+  .summary-card h3{font-size:15px;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  .summary-card p{font-size:13px;color:var(--muted);line-height:1.65}
+  .footer{text-align:center;padding:32px;font-size:12px;color:var(--muted)}
+  .status-skip{font-size:11px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;padding:4px 12px;border-radius:6px;white-space:nowrap;background:#f3f4f6;color:#9ca3af;border:1px solid #e5e7eb}
+  @media(max-width:768px){.header{padding:28px 20px}.main{padding:24px 16px}.meeting-body{padding-left:28px}.meeting-header{padding:18px 20px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-inner">
+    <div class="header-top">
+      <div>
+        <h1>Shoptalk Las Vegas 2026</h1>
+        <div class="header-meta">Detailed Meeting Report &middot; 25 Scheduled Meetings &middot; Prepared for CEO Review</div>
+      </div>
+      <div class="header-badges">
+        <span class="badge badge-purple">25 Meetings</span>
+        <span class="badge badge-green">18 Active Leads</span>
+        <span class="badge badge-amber">1 No-Show</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <div class="toc">
+    <h2>Table of Contents</h2>
+    <div class="toc-grid">
+      <div class="toc-item"><span>01</span> Perfect Corp</div>
+      <div class="toc-item"><span>02</span> Temu</div>
+      <div class="toc-item"><span>03</span> Scale Army</div>
+      <div class="toc-item"><span>04</span> Quad</div>
+      <div class="toc-item"><span>05</span> SARAL</div>
+      <div class="toc-item"><span>06</span> Nocnoc Store</div>
+      <div class="toc-item"><span>07</span> Progressive Leasing</div>
+      <div class="toc-item"><span>08</span> Katapult</div>
+      <div class="toc-item"><span>09</span> GXO Logistics</div>
+      <div class="toc-item"><span>10</span> Bazaarvoice</div>
+      <div class="toc-item"><span>11</span> PayPal</div>
+      <div class="toc-item"><span>12</span> Awardco</div>
+      <div class="toc-item"><span>13</span> TDCCommerce</div>
+      <div class="toc-item"><span>14</span> Fetch</div>
+      <div class="toc-item"><span>15</span> Transcend Capital</div>
+      <div class="toc-item"><span>16</span> ChatLabs</div>
+      <div class="toc-item"><span>17</span> SellCord</div>
+      <div class="toc-item"><span>18</span> Amazon Seller (Ali)</div>
+      <div class="toc-item"><span>19</span> LettrLabs</div>
+      <div class="toc-item"><span>20</span> Starbucks Cards</div>
+      <div class="toc-item"><span>21</span> VTEX</div>
+      <div class="toc-item"><span>22</span> Flowcode</div>
+      <div class="toc-item"><span>23</span> IMG Brands Licensing</div>
+      <div class="toc-item"><span>24</span> Switch</div>
+      <div class="toc-item"><span>25</span> TikTok Shop + Pet Jewelry</div>
+    </div>
+  </div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">01</div><div class="meeting-info"><div class="meeting-company">Perfect Corp</div><div class="meeting-contact">Felicia Tsao</div></div></div><div class="meeting-right"><span class="category-tag">Technology</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Virtual try-ons for all jewelry in full 3D rendering. Also offers an on-screen ring sizer tool for digital customers. Strong technology that can immediately enhance the online shopping experience.</div></div><div class="section"><div class="section-label">Key Offering</div><div class="section-content">3D virtual try-on for jewelry, on-screen ring sizer</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Schedule product demo to evaluate 3D rendering quality and integration requirements</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">02</div><div class="meeting-info"><div class="meeting-company">Temu</div><div class="meeting-contact">Ronald Wu</div></div></div><div class="meeting-right"><span class="category-tag">Marketplace</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Temu wants us to list diamonds and jewelry on their platform. Given our volume capability as a large company, they are willing to waive most standard fees and provide co-op advertising support. This is a significant financial benefit for marketplace entry.</div></div><div class="section"><div class="section-label">Key Offering</div><div class="section-content">Marketplace listing with fee waivers and co-op advertising</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Finalize listing terms and fee waiver specifics with Ronald Wu</div><div class="action-item">→ Identify initial product catalog for Temu listing</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">03</div><div class="meeting-info"><div class="meeting-company">Scale Army</div><div class="meeting-contact">Laura Villanueva</div></div></div><div class="meeting-right"><span class="category-tag">Services</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Staffing service for hiring pre-vetted Latin American contractors on contract basis. They handle all interviewing and vetting. Contractors work in the same time zone as us. We pay the company on contract terms — no direct employment overhead.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Identify current staffing needs that could benefit from LATAM contractors</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">04</div><div class="meeting-info"><div class="meeting-company">Quad</div><div class="meeting-contact">George Forge</div></div></div><div class="meeting-right"><span class="category-tag">Marketing</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Print services provider. We have requested quotes for catalogues and Flowcode integration.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Review catalogue quotes when received</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">05</div><div class="meeting-info"><div class="meeting-company">SARAL</div><div class="meeting-contact">Yash Chavan</div></div></div><div class="meeting-right"><span class="status-skip">No-Show</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Did not show up to the scheduled meeting. No follow-up planned.</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">06</div><div class="meeting-info"><div class="meeting-company">Nocnoc Store</div><div class="meeting-contact">Ilan Bajarlia</div></div></div><div class="meeting-right"><span class="category-tag">Marketplace</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Nocnoc will list our products from their store across Latin America. They are the #1 seller in the Latin American market, making them a strong channel for geographic expansion.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Send product catalog and pricing for Latin American listing</div><div class="action-item">→ Negotiate commission/fee structure</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">07</div><div class="meeting-info"><div class="meeting-company">Progressive Leasing</div><div class="meeting-contact">Brian Smith</div></div></div><div class="meeting-right"><span class="category-tag">Finance</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Lease-to-own company. We have requested them to put our Amazon or Walmart link on their app to start with. They will get back to us with a response.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Follow up on app link placement request</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">08</div><div class="meeting-info"><div class="meeting-company">Katapult</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Finance</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Same lease-to-own model as Progressive Leasing. Meeting their director next week. Same request — to feature our Amazon and Walmart links on their app.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Prepare for director meeting next week</div><div class="action-item">→ Present Amazon/Walmart link placement proposal</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">09</div><div class="meeting-info"><div class="meeting-company">GXO Logistics</div><div class="meeting-contact">Luca</div></div></div><div class="meeting-right"><span class="status-skip">Not Relevant</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Not relevant to our current business needs. No follow-up planned.</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">10</div><div class="meeting-info"><div class="meeting-company">Bazaarvoice</div><div class="meeting-contact">Bryce Galus</div></div></div><div class="meeting-right"><span class="category-tag">Marketing</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Can syndicate reviews from our website to Walmart and Target. Additionally, they have a team of people we can send product samples to, and they will write authentic reviews for a fee. All content they post is owned by us for use on our social channels.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Get pricing for reviews syndication to Walmart and Target</div><div class="action-item">→ Explore sample-based review program and content ownership terms</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">11</div><div class="meeting-info"><div class="meeting-company">PayPal</div><div class="meeting-contact">Jodi Sherman</div></div></div><div class="meeting-right"><span class="category-tag">Advertising</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Advertising on PayPal app and Venmo. We have requested them to carry our Amazon and Walmart links. They can provide extremely specific data and information about people's purchasing behavior — powerful targeting capability.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Follow up on Amazon/Walmart link placement on PayPal and Venmo</div><div class="action-item">→ Request sample targeting data and ad pricing</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">12</div><div class="meeting-info"><div class="meeting-company">Awardco</div><div class="meeting-contact">Jill Onofrietti</div></div></div><div class="meeting-right"><span class="category-tag">Partnership</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Corporate gifting platform where we can list products and receive payment via straight invoice. Very promising opportunity. We offered to make her a custom ring, and she committed to connecting us with their corporate gifting department to help us sell high-end jewelry through the platform.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Prepare product catalog suitable for corporate gifting</div><div class="action-item">→ Follow up with Jill for intro to corporate gifting department</div><div class="action-item">→ Create custom ring as relationship builder</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">13</div><div class="meeting-info"><div class="meeting-company">TDCCommerce</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Technology</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">AI-powered CRM platform — exactly what we need for our operations. The system can integrate directly with RightClick, creating a seamless workflow.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Schedule technical demo to evaluate CRM capabilities</div><div class="action-item">→ Confirm RightClick integration feasibility with IT team</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">14</div><div class="meeting-info"><div class="meeting-company">Fetch</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Advertising</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Fetch captures more than $152 billion in consumer transactions annually with 17 million+ active users and 5 billion+ receipts processed to date. They process millions of receipts daily. Their platform enables extremely specific ad targeting and can direct users to our Amazon and Walmart links.</div></div><div class="section"><div class="section-label">Key Metrics</div><div class="section-content">$152B+ annual transactions &middot; 17M+ active users &middot; 5B+ receipts processed</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Request advertising rate card and targeting capabilities deck</div><div class="action-item">→ Discuss pilot campaign to Amazon/Walmart links</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">15</div><div class="meeting-info"><div class="meeting-company">Transcend Capital</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Finance</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Business credit provider offering next-day payment terms. Could help with cash flow optimization.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Evaluate terms when/if cash flow optimization becomes a priority</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">16</div><div class="meeting-info"><div class="meeting-company">ChatLabs</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Technology</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Very promising AI photoshoot generator. We can send our jewelry as a package along with marketing content needed to jewelers — a very significant value-added service. The generation takes seconds and is not expensive. De Beers is cited as an example user. Should help us create marketing content at scale.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Run pilot with 5-10 jewelry pieces to evaluate AI photo quality</div><div class="action-item">→ Get pricing for volume usage</div><div class="action-item">→ Assess potential as a value-add service for B2B jeweler clients</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">17</div><div class="meeting-info"><div class="meeting-company">SellCord</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Marketplace</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">SellCord is the #1 seller on Walmart. They can work on a commission basis to help us sell on Walmart. They sound very promising for accelerating our Walmart channel.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Negotiate commission rate and contract terms</div><div class="action-item">→ Identify initial product assortment for Walmart launch</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">18</div><div class="meeting-info"><div class="meeting-company">Amazon Seller (Ali)</div><div class="meeting-contact">Ali</div></div></div><div class="meeting-right"><span class="category-tag">Marketplace</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Strong Amazon selling track record. Can work on commission to help us sell on Amazon. Currently gathering data and will send us a formal proposal.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Review proposal when received and compare terms</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">19</div><div class="meeting-info"><div class="meeting-company">LettrLabs</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Marketing</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Provides literally handwritten cards — a very unique, high-touch marketing approach for customer engagement and retention.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Explore for VIP customer outreach or post-purchase campaigns</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">20</div><div class="meeting-info"><div class="meeting-company">Starbucks Business Cards</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Misc</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">$5 Starbucks-branded business cards for professional networking use.</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">21</div><div class="meeting-info"><div class="meeting-company">VTEX</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Technology</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Best solution found so far for our B2B needs — website creation and order processing. Major brands like Pandora use their platform. We will schedule a demo to evaluate further.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Schedule demo with VTEX team</div><div class="action-item">→ Prepare list of B2B platform requirements for evaluation</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">22</div><div class="meeting-info"><div class="meeting-company">Flowcode</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Marketing</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">We can use their free pilot program for our JCK jewelry tags. This will help us evaluate whether a paid engagement is worthwhile.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Set up free pilot for JCK jewelry tags</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">23</div><div class="meeting-info"><div class="meeting-company">IMG Brands Licensing</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Partnership</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Connected at the Las Vegas Licensing Expo. IMG owns major brands like Banana Republic and Gap. Potential opportunity for brand licensing arrangements.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Research licensing terms for relevant brands</div><div class="action-item">→ Schedule follow-up to discuss jewelry licensing opportunities</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">24</div><div class="meeting-info"><div class="meeting-company">Switch</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Marketplace</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Jewelry sample sale and rental service (joinswitch.com). Meeting with them next week to discuss listing our jewelry on their platform.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Prepare sample inventory list for meeting next week</div></div></div></div>
+
+  <div class="meeting"><div class="meeting-header"><div class="meeting-left"><div class="meeting-num">25</div><div class="meeting-info"><div class="meeting-company">TikTok Shop + Pet Jewelry</div><div class="meeting-contact">—</div></div></div><div class="meeting-right"><span class="category-tag">Marketplace</span></div></div><div class="meeting-body"><div class="section"><div class="section-label">Summary</div><div class="section-content">Opportunity to get brand license and sell pet jewelry on marketplaces (TikTok Shop, Temu, and others) using AI marketing. No setup cost and a huge market for pet jewelry.</div></div><div class="section"><div class="section-label">Action Items</div><div class="action-item">→ Research pet jewelry market size and competitive landscape</div><div class="action-item">→ Evaluate brand licensing requirements</div></div></div></div>
+
+  <div class="summary-section">
+    <h2>Strategic Themes & Recommendations</h2>
+    <div class="summary-grid">
+      <div class="summary-card"><h3>🏪 Marketplace Expansion</h3><p>Multiple strong channels identified: Temu (fee waivers), SellCord (Walmart #1 seller), Amazon (Ali proposal), Nocnoc (Latin America), and TikTok Shop. Prioritize Temu and SellCord for quickest revenue impact.</p></div>
+      <div class="summary-card"><h3>🤖 AI & Technology Stack</h3><p>Three critical technologies: TDCCommerce (AI CRM + RightClick), Perfect Corp (virtual try-on), ChatLabs (AI photoshoots). These collectively modernize our digital experience, CRM, and marketing content pipeline.</p></div>
+      <div class="summary-card"><h3>📢 Advertising & Data</h3><p>Fetch and PayPal offer powerful data-driven advertising with direct links to our marketplace listings. Bazaarvoice enables review syndication to Walmart/Target. Combined approach strengthens omnichannel presence.</p></div>
+      <div class="summary-card"><h3>💎 Revenue Diversification</h3><p>Awardco's corporate gifting channel, pet jewelry on TikTok, IMG brand licensing, and Switch's rental model all represent net-new revenue streams beyond traditional sales.</p></div>
+    </div>
+  </div>
+</div>
+<div class="footer">Shoptalk Las Vegas 2026 — Confidential Detailed Report &middot; Prepared for CEO Review</div>
+</body>
+</html>
